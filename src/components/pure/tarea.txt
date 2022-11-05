@@ -1,0 +1,23 @@
+En este ejercicio de React JS deberéis crear una lista, esta lista tendrá dentro distintos contactos y deberá cumplir con las siguientes funcionalidades:
+
+Mostrar contacto.
+
+Crear contacto.
+
+Eliminar contacto.
+
+Cambiar el estado del contacto entre Conectado y Desconectado.
+function deleteContact(contacto) {
+        console.log('Delete this task: ', contacto);
+        const index = Contact.indexOf(contacto);
+        const tempContact = [...Contact];
+        tempContact.splice(index,1);
+        setContact(tempContact)
+    }
+    function addTask(contacto) {
+        console.log('Delete this task: ', contacto);
+        const index = Contact.indexOf(contacto);
+        const tempContact = [...Con];
+        tempContact.push(contacto);
+        setContact(tempContact);
+    }
